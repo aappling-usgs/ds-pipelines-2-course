@@ -1,0 +1,18 @@
+title: ds-pipelines-2
+description: >-
+  Big Collaborative Pipelines: using a shared cache, creating task tables, and
+  implementing the split-apply and split-apply-combine paradigms
+template:
+  repo: ds-pipelines-2-template
+  name: ds-pipelines-2
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
